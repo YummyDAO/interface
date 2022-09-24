@@ -130,7 +130,13 @@ export function useTokenContract(tokenAddress?: string, withSignerIfPossible?: b
 
 export function useWETHContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract(chainId ? WETH[chainId].address : undefined, WETH_ABI, withSignerIfPossible)
+  //const _weth = '0xce7726e4175240F4289F953Ea6Ccf854e429f2C1'
+  //const weth = [WETH][ChainId.RINKEBY].address
+  //return useContract(chainId ? WETH[chainId].address : undefined, WETH_ABI, withSignerIfPossible)
+  return useContract(WETH[ChainId.RINKEBY].address, WETH_ABI, withSignerIfPossible)
+   console.log(chainId)
+  //return useContract(chainId === WETH[ChainId.RINKEBY].address : undefined, WETH_ABI, withSignerIfPossible)
+  //return useContract( WETH[chainId].address : undefined, WETH_ABI, withSignerIfPossible)
 }
 
 export function useArgentWalletDetectorContract(): Contract | null {
