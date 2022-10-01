@@ -212,6 +212,12 @@ export function useSwapCallback(
               summary: withVersion
             })
 
+            console.log(outputAmount)
+
+            console.log(response.inputSymbol)
+
+            console.log(response.hash)
+
             return response.hash
           })
           .catch((error: any) => {

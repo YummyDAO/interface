@@ -418,7 +418,7 @@ export default function Header() {
           {/*<StyledNavLink id={`stake-nav-link`} to={'/vote'}>*/}
             {/*Vote*/}
           {/*</StyledNavLink>*/}
-          <StyledExternalLink id={`stake-nav-link`} href={''} style={{marginLeft: mobile?'0px':'12px', marginRight: mobile?'0px':'12px'}}>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://lend.puffydao.com/#/'} style={{marginLeft: mobile?'0px':'12px', marginRight: mobile?'0px':'12px'}}>
             Borrow {!mobile && <span style={{ fontSize: '11px' }}>↗</span>}
           </StyledExternalLink>
 
@@ -437,7 +437,7 @@ export default function Header() {
             )}
           </HideSmall>
           <HideSmall>
-            <StyledExternalLink id={`stake-nav-link`} href={''} style={{marginLeft: mobile?'0px':'12px', marginRight: mobile?'0px':'12px'}}>
+            <StyledExternalLink id={`stake-nav-link`} href={'https://app.multichain.org/#/router'} style={{marginLeft: mobile?'0px':'12px', marginRight: mobile?'0px':'12px'}}>
                 Bridge Assets {!mobile && <span style={{ fontSize: '11px' }}>↗</span>}
               </StyledExternalLink>
           </HideSmall>
