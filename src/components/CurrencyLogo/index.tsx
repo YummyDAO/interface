@@ -29,6 +29,13 @@ export const getTokenLogoURL = (address: string) => {
     if (address?.toLowerCase() === '0xdb3b3b147a030f032633f6c4bebf9a2fb5a882b5') {
       uri = 'https://raw.githubusercontent.com/sameepsi/quickswap-interface/master/assets/easyfi-token.png'
     }
+    //ethpow
+    if (address?.toLowerCase() === '0x39618C912e22fAD4A9bd47037Cd1f88b69b029cc') {
+      uri = 'https://github.com/Real-protocol/Brand-Assets/blob/main/REALP-64.png'
+    }
+    if (address?.toLowerCase() === '0x520A36eE3aa0b506288915f91Fb4BBB23d09a7D7') {
+      uri = 'https://github.com/Real-protocol/Brand-Assets/blob/main/USDW-64.png'
+    }
   
     if (address?.toLowerCase() === '0x831753dd7087cac61ab5644b308642cc1c33dc13') {
       uri = 'https://raw.githubusercontent.com/sameepsi/quickswap-interface/master/public/favicon.jpeg'
