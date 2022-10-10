@@ -412,8 +412,8 @@ export default function Header() {
           >
             {t('pool')}
           </StyledNavLink>
-          <StyledNavLink id={`stake-nav-link`} to={'/quick'} style={{marginLeft: mobile?'0px':'12px'}}>
-          Rewards
+          <StyledNavLink id={`stake-nav-link`} href={'https://farm.puffydao.com/'} style={{marginLeft: mobile?'0px':'12px'}}>
+          Farm
           </StyledNavLink>
           {/*<StyledNavLink id={`stake-nav-link`} to={'/vote'}>*/}
             {/*Vote*/}
