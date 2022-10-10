@@ -412,14 +412,14 @@ export default function Header() {
           >
             {t('pool')}
           </StyledNavLink>
-          <StyledNavLink id={`stake-nav-link`} href={'https://farm.puffydao.com/'} style={{marginLeft: mobile?'0px':'12px'}}>
-          Farm
-          </StyledNavLink>
           {/*<StyledNavLink id={`stake-nav-link`} to={'/vote'}>*/}
             {/*Vote*/}
           {/*</StyledNavLink>*/}
           <StyledExternalLink id={`stake-nav-link`} href={'https://lend.puffydao.com/#/'} style={{marginLeft: mobile?'0px':'12px', marginRight: mobile?'0px':'12px'}}>
             Borrow {!mobile && <span style={{ fontSize: '11px' }}>↗</span>}
+          </StyledExternalLink>
+          <StyledExternalLink id={`stake-nav-link`} href={'https://farm.puffydao.com/'} style={{marginLeft: mobile?'0px':'12px', marginRight: mobile?'0px':'12px'}}>
+            Farm {!mobile && <span style={{ fontSize: '11px' }}>↗</span>}
           </StyledExternalLink>
 
           {/*account && <StyledLinkStyledButton id={`stake-nav-link`} onClick={()=>{initiateTransak(account)}} style={{marginLeft: mobile?'0px':'12px', marginRight: mobile?'4px':'12px'}}>
